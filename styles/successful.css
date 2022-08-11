@@ -58,7 +58,25 @@ button{
         gap: 2vw;
     }
 
+    #left{
+        font-size: 3vw;
+    }
+
     #right{
-        padding: 60vw 0vw;
+        padding: 5vw 0vw;
+    }
+
+    #right h3{
+        font-size: 4vw;
+    }
+
+    #tick{
+        width: 40%;
+    }
+
+    #returnlogin{
+        width: 50vw;
+        height: 9vw;
+        font-size: 4vw;
     }
 }   

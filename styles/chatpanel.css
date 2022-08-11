@@ -53,17 +53,41 @@ input[type=submit],button{
 @media screen and (max-width:700px) {
     .main{
         flex-direction: column;
-        padding: 5vw;
+        padding: 1vw;
         gap: 2vw;
     }
 
     #left{
         font-size: 2vw;
+        width: 90vw;
+    }
+
+    form{
+        display: inline;
     }
 
     input[type=submit],button{
         width: 25vw;
         height: 8vw;
         font-size: 4vw;
+    }
+
+    textarea{
+        width: 80vw;
+        height: 140vw;
+        margin-bottom: 1vw;
+    }
+
+    input[type=text]{
+        width: 61vw;
+        height: 8vw;
+        color: black;
+    }
+    
+    input[type=submit],button{
+        width: 18vw;
+        height: 7vw;
+        color: black;
+        font-size: 5vw;
     }
 }
