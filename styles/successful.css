@@ -1,0 +1,64 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    padding: 1.5vw;
+}
+
+.main{
+    background-color: rgb(201, 253, 255);
+    padding: 4vw 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+#left{
+    background-color: cadetblue;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    color: white;
+    padding: 3vw 0vw;
+}
+
+#left img{
+    width: 85%;
+}
+
+#right{
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw;
+    gap: 2vw;
+}
+
+#tick{
+    width: 45%;
+}
+
+button{
+    width: 12vw;
+    height: 2vw;
+    color: black;
+    font-size: 1vw;
+}
+
+@media screen and (max-width:700px) {
+    .main{
+        flex-direction: column;
+        padding: 5vw;
+        gap: 2vw;
+    }
+
+    #right{
+        padding: 60vw 0vw;
+    }
+}   
