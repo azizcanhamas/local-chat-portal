@@ -1,0 +1,82 @@
+<%-- 
+    Document   : register
+    Created on : Aug 11, 2022, 3:59:01 PM
+    Author     : azuwin_user
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wi-Fi Authentication Portal</title>
+    <link rel="stylesheet" href="styles/register.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet"></head>
+<body>
+    <div class="main">
+        <div id="left">
+            <img src="img/logo.png" alt="">
+            <h1>
+                Register
+            </h1>
+        </div>
+        <div id="right">
+            <form action="">
+                <table>
+                    <tr>
+                        <td>E-mail</td>
+                        <td><input type="text" id="email" name="email" onkeyup="check()"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" id="password" name="password" onkeyup="check()"></td>
+                    </tr>
+                    <tr>
+                        <td>Rewrite Password</td>
+                        <td><input type="password" name="repassword" id="repassword" onkeyup="check()"></td>
+                    </tr>
+                    <tr>
+                        <td><button formaction="index.jsp">Login Panel</button></td>
+                        <td><input type="submit" value="Sign Up" id="signup"></td>
+                    </tr>
+                    <tr>
+                        <p id="info"></p>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script>
+    document.getElementById("signup").disabled=true;
+    function check(){
+        if(document.getElementById("email").value.length==0)
+            document.getElementById("signup").disabled=true;
+        else if(document.getElementById("password").value.length<8){
+            document.getElementById("signup").disabled=true;
+            document.getElementById("info").innerHTML="Parola en az 8 karakter olmalidir!";
+        }
+        else if(document.getElementById("repassword").value.length<8){
+            document.getElementById("signup").disabled=true; 
+            document.getElementById("info").innerHTML="İlk parola ikinci parola ile eşleşmiyor!";
+        }
+            
+        else if(!(document.getElementById("repassword").value==document.getElementById("password").value)){
+            document.getElementById("signup").disabled=true;
+            document.getElementById("info").innerHTML="İlk parola ikinci parola ile eşleşmiyor!";
+        }
+        else{
+            document.getElementById("info").innerHTML="";
+            document.getElementById("signup").disabled=false;
+        }
+    }
+    
+</script>
+
+</html>
