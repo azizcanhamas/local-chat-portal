@@ -45,7 +45,7 @@ public class userModel {
             ps.setString(1, email);
             ps.setString(2, password);
             ps.executeUpdate();
-            con.close();
+//            con.close();
             return true;
         }catch(SQLException e){
             System.out.println(e);

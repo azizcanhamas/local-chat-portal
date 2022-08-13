@@ -1,9 +1,3 @@
-<%-- 
-    Document   : register
-    Created on : Aug 11, 2022, 3:59:01 PM
-    Author     : azuwin_user
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <html lang="en">
@@ -11,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wi-Fi Authentication Portal</title>
+    <title>Register | Free Local Chat Portal</title>
     <link rel="stylesheet" href="styles/register.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +20,7 @@
             </h1>
         </div>
         <div id="right">
-            <form action="">
+            <form action="registerController" method="post">
                 <table>
                     <tr>
                         <td>E-mail</td>

@@ -1,0 +1,108 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    padding: 1.5vw;
+}
+
+.main{
+    background-color: rgb(201, 253, 255);
+    padding: 4vw 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+#left{
+    background-color: cadetblue;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    color: white;
+    padding: 3vw 0vw;
+    
+}
+
+#left img{
+    width: 85%;
+}
+
+#right{
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw;
+}
+
+#right table{
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 1.2vw;
+}
+
+#right table tr,td{
+    padding: 2vw;
+}
+
+#right input[type=text],input[type=password]{
+    width: 15vw;
+    height: 2vw;
+    color: black;
+}
+
+input[type=password]{
+    font-size: 2vw;
+}
+
+input[type=submit],button{
+    width: 9vw;
+    height: 2vw;
+    color: black;
+    font-size: 1vw;
+    margin-left: 2.5vw;
+}
+
+@media screen and (max-width:700px) {
+    .main{
+        flex-direction: column;
+        padding: 5vw;
+        gap: 2vw;
+    }
+
+    #left{
+        font-size: 2vw;
+    }
+
+    #left img{
+        width: 40%;
+    }
+
+    #right{
+        padding: 15vw;
+    }
+
+    #right table{
+        font-size: 5vw;
+    }
+
+    #right input[type=text],input[type=password]{
+        width: 40vw;
+        height: 5vw;
+        color: black;
+    }
+
+    input[type=submit],button{
+        width: 25vw;
+        height: 8vw;
+        font-size: 4vw;
+    }
+
+    input[type=password]{
+        font-size: 5vw;
+    }
+}
